@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron mt-5 shadow border">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple complain and suggestion app built with Django 3 and bootstrap 4. In this application, You do not need to add your information.</p>
+  <hr class="my-4">
+  <p>It helps to make us better.</p>
+  <a class="btn btn-dark btn-lg" href="{% url 'add-complain' %}" role="button">Submit Complain</a>
+  <a class="btn btn-success btn-lg" href="{% url 'add-suggestion' %}" role="button">Submit Suggestion</a>
+</div>
+{% endblock content %}
